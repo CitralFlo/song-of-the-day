@@ -3,12 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Song of the day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #000e25 0%, #3e2c69 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+
+        h1 {
+            color: rebeccapurple;
+            margin-bottom: 20px;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 700;
+            font-size: 3em;
+            font-style: normal;
+        }
+
+        .song-info {
+            background: #333333;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .song-info p {
+            margin: 10px 0;
+            color: #b2b2b2;
+        }
+    </style>
 </head>
 <body>
-<div>
+
+
+<div class="container">
     <h1>Song of the day</h1>
-    <p th:text="${title}">Show title here...</p>
-    <p th:text="${artist}">Show artist here...</p>
+    <div class="song-info">
+        <p><strong>Title:</strong> <span id="song-title" th:text="${title}">Title goes here</span></p>
+        <p><strong>Artist:</strong> <span id="song-artist" th:text="${artist}">Artist goes here</span></p>
+    </div>
 </div>
 </body>
 </html>
