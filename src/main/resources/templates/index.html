@@ -55,6 +55,11 @@
     <div class="song-info">
         <p><strong>Title:</strong> <span id="song-title" th:text="${title}">Title goes here</span></p>
         <p><strong>Artist:</strong> <span id="song-artist" th:text="${artist}">Artist goes here</span></p>
+        <a th:href="${spotifySearchUrl}" target="_blank">
+            <p>
+                Find this song on spotify
+            </p>
+        </a>
     </div>
 </div>
 </body>

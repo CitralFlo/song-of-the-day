@@ -23,6 +23,11 @@ public class SongController {
         model.addAttribute("title", song.getTitle());
         model.addAttribute("artist", song.getArtist());
 
+        String spotifySearchUrl = "https://open.spotify.com/search/" +
+                song.getTitle().replace(" ", "%20") + "%20" + song.getArtist().replace(" ", "%20");
+
+        model.addAttribute("spotifySearchUrl", spotifySearchUrl);
+
         return "index";
     }
 
