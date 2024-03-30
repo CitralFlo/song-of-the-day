@@ -2,7 +2,8 @@
 ## Created by CitralFlo
 
 # Preview
-![image](https://github.com/CitralFlo/song-of-the-day/assets/80779749/52e9fdf7-1701-428e-8d9b-7b8c91971b24)
+![image](https://github.com/CitralFlo/song-of-the-day/assets/80779749/62fd84de-3180-43e8-ac81-15b319cfe677)
+
 
 # Overview
 This is a simple web application that displays randomly selected song from my favourite tracks every time You refresh the page.
